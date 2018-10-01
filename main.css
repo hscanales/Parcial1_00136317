@@ -209,7 +209,6 @@ body {
 #form {
     align-items: center;
     display: flex;
-    justify-content: center;
     padding: 8em 4em 6em 4em;
     min-height: 70vh;
     background-image: url("Images/contacus.jpg");
@@ -218,38 +217,29 @@ body {
     background-repeat: no-repeat;
     border-top: 0;
     position: relative;
-    text-align: center;
-    overflow: hidden;
     z-index: 0;
 }
 
-
-footer{ 
+#form .inner {
     display: flex;
-    background-color: black;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#form .inner .a {
+    width: 50%;
+    margin: 0;
+    
+}
+
+#form .inner .b {
     color: white;
-    list-style: none;
+    width: 50%;
+    margin: 0;
+    background-color: rgba(59, 5, 52, 0.281)    ;
 }
 
 
-footer ul li a{
-    color: #dbdada;
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-}
-
-.redes {
-    color: #dbdada;
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-}
-
-.moreofus ul {
-    list-style: none;
-    color: #dbdada;
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-}
 
 
 .button,button{
@@ -268,13 +258,30 @@ footer ul li a{
     text-decoration: none;
     white-space: nowrap;
 }
+
+
 #footer {
+    display: flex;
+    flex-wrap: wrap;
     padding: 4em 0 2em 0;
     background-color: #1b1b1f;
-    text-align: center;
+    text-align: left;
+    list-style: none;
 }
 
-#footer .inner {
+#footer div {
     width: 50%;
     margin: 0 auto;
+}
+
+#footer a{
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    border-bottom: 1px dotted;
+    outline: 0;
+}
+
+
+#footer h3{
+    color: rgba(255, 255, 255, 0.75);
 }

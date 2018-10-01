@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Monoton');
-
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 :root{
 box-sizing: border-box;
 }
@@ -215,6 +215,28 @@ body {
 
 
 footer{ 
+    display: flex;
     background-color: black;
-    
+    color: white;
+    list-style: none;
+}
+
+
+footer ul li a{
+    color: #dbdada;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+.redes {
+    color: #dbdada;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+.moreofus ul {
+    list-style: none;
+    color: #dbdada;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
 }

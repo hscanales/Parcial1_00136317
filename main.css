@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+
+:root{
+box-sizing: border-box;
+}
+*, ::before, ::after{
+    margin: 0; 
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    -webkit-animation-delay: 0.1s;
+    -webkit-animation-name: fontfix;
+    -webkit-animation-duration: 0.1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes fontfix {
+    from { opacity: 1; }
+    to   { opacity: 1; }
+}
+
+.navbar {
+    width: 100%;
+    height: 56px;
+    z-index: 2;
+}
+
+.navbar .links{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    background-color: black;
+    position: relative;
+    height: 100%;
+}
+
+.links li a{
+    color: white;
+    text-decoration: none;
+}
+
+.links .logo{
+    height: 100px;
+    width: 100px;
+    background: black;
+    position: absolute;
+    top: 4px;  
+    padding: 0 5px 5px;
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%,0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%,0% 50%);
+}
+
+.links .logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    z-index: 1;
+    position: absolute;
+}
+
+
+#banner{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 8em 4em 6em 4em;
+    min-height: 70vh;
+    background-image: url("Images/concierto.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top: 0;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    z-index: 0;
+}
+
+
+#banner .inner {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+
+#banner h1{
+    color: #ffffff;
+    font-size: 7em;
+    font-family: 'Monoton', cursive;
+    margin: 0;
+}
+
+#banner p{
+    color: #dbdada;
+    font-size: 2.5em;
+}
+
+#banner:before{
+    transition: opacity 3s ease;
+    transition-delay: 1s;
+    content: '';
+    background-color: #42424f;
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0.65;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+#banner .more{
+    background-image: url("images/arrow.svg");
+    background-position: center 1.35em;
+    background-repeat: no-repeat;
+    background-size: auto;
+    border: 2px solid white;
+    border-radius: 100%;
+    color: rgba(255, 255, 255, 0.5);
+    display: block;
+    height: 4em;
+    text-indent: 4em;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 4em;
+    z-index: 2;
+    margin: 0 auto 2em auto;
+}
+
+
+.boxes{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.boxes .box{
+    margin: 1em 1em 2em 1em;
+    width: 30%;
+    box-shadow: 5px 0px 30px grey;
+}
+
+
+.box {
+    border-radius: 12px;
+    margin-bottom: 2em;
+    background: white;
+    text-align: center;
+    }
+
+
+    .box .image-fit{
+        margin:0;
+    }
+    
+    .box .image img{
+        border-radius: 4em 4em 0 0;
+    }
+    
+    .box .inner {
+        padding: 1em;
+        width: 100% !important;
+    }
+
+    .image{
+        border-radius: 0.4em;
+        border:0;
+        display: inline-block;
+        position: relative;
+    
+    }
+    
+    .image img{
+        border-radius: 4em;
+        display: block;
+    }
+    
+    .image-fit{
+        display: block;
+        width: 100%;
+    }
+    
+    .image-fit img{
+        width: 100%;
+    }
+    
+    .image.main {
+        display: block;
+        margin: 0 0 3em 0;
+        width: 100%;
+      
+    }
+
+#form {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 8em 4em 6em 4em;
+    min-height: 70vh;
+    background-image: url("Images/contacus.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top: 0;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    z-index: 0;
+}
+
+
+footer{ 
+    background-color: black;
+    
+}
